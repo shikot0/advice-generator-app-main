@@ -9,7 +9,6 @@ adviceButton.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => { 
-        console.log(data) 
         adviceID.innerText = data.slip.id; 
         adviceOutput.innerText = data.slip.advice;   
     });        
