@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    font-family: 'Manrope';
+    font-weight: 800;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(218, 23%, 16%);
+}
+#card {
+    background: url(images/pattern-divider-desktop.svg) hsl(217, 19%, 24%); 
+    background-repeat: no-repeat; 
+    background-position: left 50% bottom 40px;  
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 90vw;
+    max-width: 400px; 
+    min-height: 230px;  
+    border-radius: 8px; 
+    padding: 30px; 
+    position: relative;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.6);   
+}
+#card p:first-child {
+    text-transform: uppercase;
+    font-size: .75rem; 
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px; 
+}
+#advice-text {
+    color: hsl(193, 38%, 86%);
+    text-align: center; 
+    font-size: 1.3rem; 
+    margin: 22px 0 25px;  
+}
+#advice-button {
+    position: absolute;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px; 
+    border: none;
+    background: hsl(150, 100%, 66%);
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: -22.5px;
+    cursor: pointer;
+    transition: .2s; 
+} 
+#advice-button:hover {
+    box-shadow: 0 0 10px hsl(150, 100%, 66%);
+}
+#advice-button img {
+    width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+    #card {
+        background: url(images/pattern-divider-mobile.svg) hsl(217, 19%, 24%); 
+        background-repeat: no-repeat; 
+        background-position: left 50% bottom 40px;  
+    }
+}
